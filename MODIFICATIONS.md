@@ -105,3 +105,8 @@
 - Real delay test: new `custom/RealDelay.kt` (one Xray process per batch, password-protected loopback SOCKS inbound per config, HTTP `generate_204` through it); `custom/ConfigPing.kt` (TLS probe and trust-all `TrustManager` removed, `diagnose`, `NO_REPLY` / `INVALID`); `custom/ConfigPingStore.kt` (serialised runs, logged results); `custom/XrayConfigBuilder.kt` (`directOutbound`, `directDns`); `ui/settings/CustomConfigsPage.kt` and `res/values*/strings.xml` (`cc_ping_noreply`, `cc_ping_invalid`).
 - Security fixes from `docs/SECURITY_AUDIT_1.5.0.md`: `custom/XrayProcess.kt` (`redact` masks UUIDs, host names, IPv6, IPv4 /16), `custom/ConfigImporter.kt` + `vpn/AetherVpnService.kt` (`activeForwardPort`: subscription downloads through the session), *Copy link* via `copySensitive`.
 - Tests: `app/src/test/.../custom/RealDelayTest.kt` (incl. `XrayLogRedactionTest`).
+
+## tvaVPN edits (latest)
+- Removed the "Freedom, in one tap" tagline from the home screen and the drawer menu.
+- Settings: removed the hero subtitle; About: removed the signing-certificate/fingerprint lines, APK hash and verify hint.
+- Tamper block: a build whose signature differs from the pinned release key shows an error screen (TamperScreen) and the VPN service refuses to connect. Release builds pin themselves automatically from the private keystore (app/build.gradle.kts).

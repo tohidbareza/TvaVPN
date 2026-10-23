@@ -385,7 +385,7 @@ private fun ReadyBlock(
     // to their own laptop.
     val allLabel = stringResource(R.string.share_copy_all_label)
     val allText = buildString {
-        append("Aether VPN share\n")
+        append("tvaVPN share\n")
         append("IP: ").append(ip).append('\n')
         append("HTTP proxy: ").append(http).append('\n')
         append("SOCKS5 proxy: ").append(socks).append('\n')

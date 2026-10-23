@@ -171,7 +171,7 @@ object SharePages {
         val heading = if (protected) {
             h1(
                 "این مرورگر از ${A} رد می‌شه",
-                "This browser goes through Aether",
+                "This browser goes through tvaVPN",
             )
         } else {
             h1(
@@ -189,13 +189,13 @@ object SharePages {
             )
             onDevice -> para(
                 "این مرورگر روی خود گوشی داره از پروکسی ${A} استفاده می‌کنه.",
-                "This browser is using the Aether proxy on the phone itself.",
+                "This browser is using the tvaVPN proxy on the phone itself.",
                 "lead",
             )
             else -> para(
                 "صفحه‌های این مرورگر از اشتراک ${A} (از راه ${ltr(esc(via.orEmpty()))}) رد می‌شن و از تونل " +
                     "${ltr("VPN")} گوشی می‌رن بیرون، نه از اینترنت خودت.",
-                "This browser's pages go through the Aether share (via ${esc(via.orEmpty())}) and leave " +
+                "This browser's pages go through the tvaVPN share (via ${esc(via.orEmpty())}) and leave " +
                     "through the phone's VPN tunnel, not your own connection.",
                 "lead",
             )
@@ -206,8 +206,8 @@ object SharePages {
             """<p class="actions"><a class="btn" href="/">${bi("راهنمای راه‌اندازی", "Setup guide")}</a></p>"""
         }
         return page(
-            "بررسی اشتراک Aether",
-            "Aether share check",
+            "بررسی اشتراک tvaVPN",
+            "tvaVPN share check",
             """
             <section class="hero">
               $chip
@@ -259,8 +259,8 @@ object SharePages {
             null -> ""
         }
         return page(
-            "اشتراک VPN در Aether",
-            "Aether VPN share",
+            "اشتراک VPN در tvaVPN",
+            "tvaVPN share",
             """
             <section class="hero">
               ${stateChip("ok", "اشتراک روشنه", "Sharing is on")} $modeChip
@@ -321,7 +321,7 @@ object SharePages {
     // ------------------------------------------------------------ page parts
 
     /** "Aether" as an isolated LTR run inside Persian text. */
-    private val A = """<span class="ltr" dir="ltr">Aether</span>"""
+    private val A = """<span class="ltr" dir="ltr">tvaVPN</span>"""
 
     private fun ltr(text: String): String = """<span class="ltr" dir="ltr">$text</span>"""
 
@@ -515,7 +515,7 @@ object SharePages {
                     "آدرس گوشی ممکنه با ری‌استارت مودم عوض بشه؛ اگه یهو قطع شد، آدرس تازه رو از کارت «اشتراک» بردار.",
                   ),
                   listOf(
-                    "In Aether, set the Share card to Home Wi-Fi and turn it on.",
+                    "In tvaVPN, set the Share card to Home Wi-Fi and turn it on.",
                     "Join this device to the same Wi-Fi as the phone. Not a Guest network: devices there " +
                       "usually cannot see each other.",
                     "Enter the PAC address from the Share card (or from ${code("http://&lt;phone&gt;:10811/")}) " +
@@ -549,7 +549,7 @@ object SharePages {
                     "اگه هات‌اسپات رو خاموش و روشن کنی، اشتراک خودش دوباره وصل می‌شه؛ لازم نیست کاری بکنی.",
                   ),
                   listOf(
-                    "Turn the phone's hotspot on, then set the Share card in Aether to Mobile hotspot.",
+                    "Turn the phone's hotspot on, then set the Share card in tvaVPN to Mobile hotspot.",
                     "Join this device to the hotspot. A USB cable or Bluetooth works too.",
                     "Each link has its own address; take the one from the Share card that matches how you are connected.",
                     "Toggling the hotspot off and on re-binds the share by itself; nothing to do.",
@@ -687,7 +687,7 @@ object SharePages {
           <header class="top">
             <div class="brand">
               <span class="mark" aria-hidden="true"></span>
-              <span class="bn" dir="ltr">Aether</span>
+              <span class="bn" dir="ltr">tvaVPN</span>
               <span class="bs">${bi("اشتراک VPN", "VPN share")}</span>
             </div>
             <div class="lang" role="group" aria-label="Language / زبان">
@@ -968,7 +968,7 @@ object SharePages {
               show('warn', 'WebRTC reveals ' + ips(all) + '. If that is not the exit IP shown in Aether, it is a ' +
                 'leak: install the lock below.',
                 W + ' این آدرس رو نشون می‌ده: ' + ips(all) + '. اگه با آی‌پی خروجی توی برنامهٔ ' +
-                '<span class="ltr" dir="ltr">Aether</span> یکی نیست، یعنی نشت داره؛ قفل پایین رو نصب کن.');
+                '<span class="ltr" dir="ltr">tvaVPN</span> یکی نیست، یعنی نشت داره؛ قفل پایین رو نصب کن.');
             }
           }
           pc.onicecandidate = function (e) {

@@ -214,6 +214,19 @@ class AetherVpnService : VpnService() {
                 return START_NOT_STICKY
             }
             else -> {
+                // TAMPER BLOCK: the tile, widget and boot paths reach the service
+                // without going through MainActivity, so the signature is checked
+                // here too. A copy not signed with the official key never connects.
+                if (studio.cluvex.aether.core.SignerIdentity.status(applicationContext) ==
+                    studio.cluvex.aether.core.SignerIdentity.Status.MISMATCH
+                ) {
+                    AetherController.setState(
+                        ConnectionState.Error(getString(R.string.tamper_short)),
+                    )
+                    stopForeground(STOP_FOREGROUND_REMOVE)
+                    stopSelf()
+                    return START_NOT_STICKY
+                }
                 val profile = ProfileCodec.decode(intent?.getStringExtra(EXTRA_PROFILE))
                 startTunnel(profile)
             }
@@ -2188,7 +2201,7 @@ class AetherVpnService : VpnService() {
         // Clamped to a sane range so a bad saved value can't break establish().
         val mtu = profile.mtu.coerceIn(ConnectionProfile.MTU_MIN, ConnectionProfile.MTU_MAX)
         val builder = Builder()
-            .setSession("Aether")
+            .setSession("tvaVPN")
             .setMtu(mtu)
             // The TUN address MUST match hev's tunnel.ipv4/ipv6 (see writeHevConfig).
             .addAddress(TunnelConfig.TUN_IPV4, TunnelConfig.TUN_IPV4_PREFIX)
@@ -2635,7 +2648,7 @@ class AetherVpnService : VpnService() {
         runCatching { tun?.close() }
         tun = null
         val builder = Builder()
-            .setSession("Aether KillSwitch")
+            .setSession("tvaVPN KillSwitch")
             .setMtu(profile.mtu.coerceIn(ConnectionProfile.MTU_MIN, ConnectionProfile.MTU_MAX))
             .addAddress(TunnelConfig.TUN_IPV4, TunnelConfig.TUN_IPV4_PREFIX)
             .addRoute("0.0.0.0", 0)

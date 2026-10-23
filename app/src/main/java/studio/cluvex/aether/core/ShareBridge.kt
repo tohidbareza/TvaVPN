@@ -734,7 +734,7 @@ object ShareBridge {
         if (live.isEmpty()) return
         DiagnosticsLog.i(
             TAG,
-            "Other local proxies detected (${live.joinToString(", ")}) - Aether uses " +
+            "Other local proxies detected (${live.joinToString(", ")}) - tvaVPN uses " +
                 "$SOCKS_SHARE_PORT/$HTTP_SHARE_PORT, so they can run side by side.",
         )
     }

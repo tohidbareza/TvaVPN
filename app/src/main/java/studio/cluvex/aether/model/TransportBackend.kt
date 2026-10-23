@@ -194,12 +194,12 @@ enum class TransportBackend {
      */
     val pipelineLabel: String
         get() = when (this) {
-            AETHER -> "Aether"
-            AETHER_PSIPHON -> "Aether \u2192 Psiphon"
+            AETHER -> "tvaVPN"
+            AETHER_PSIPHON -> "tvaVPN \u2192 Psiphon"
             TOR -> "Tor"
-            AETHER_TOR -> "Aether \u2192 Tor"
+            AETHER_TOR -> "tvaVPN \u2192 Tor"
             TOR_PSIPHON -> "Tor \u2192 Psiphon"
-            TOR_AETHER -> "Tor \u2192 Aether"
+            TOR_AETHER -> "Tor \u2192 tvaVPN"
         }
 
     /**
@@ -239,7 +239,7 @@ enum class TransportBackend {
             ?.trim()
             ?.takeIf { it.isNotEmpty() }
         if (name == null || !usesWarp) return pipelineLabel
-        return pipelineLabel.replaceFirst("Aether", "Aether($name)")
+        return pipelineLabel.replaceFirst("tvaVPN", "tvaVPN($name)")
     }
 
     companion object {

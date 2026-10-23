@@ -29,6 +29,8 @@ import studio.cluvex.aether.core.AetherController
 import studio.cluvex.aether.core.IpEndpoint
 import studio.cluvex.aether.core.NetProbe
 import studio.cluvex.aether.core.PortLease
+import studio.cluvex.aether.core.SignerIdentity
+import studio.cluvex.aether.ui.TamperScreen
 import studio.cluvex.aether.core.TunnelConfig
 import studio.cluvex.aether.data.LanguagePrefs
 import studio.cluvex.aether.data.OnboardingStore
@@ -122,6 +124,21 @@ class MainActivity : ComponentActivity() {
         // Compose inherits an LTR decor view and lays Persian out backwards.
         pinLayoutDirection()
         enableEdgeToEdge()
+
+        // TAMPER BLOCK: a copy that is not signed with the official key (a
+        // modified or re-signed APK from anywhere but the official releases) gets
+        // an error screen and nothing else - no profile load, no IP lookups.
+        if (SignerIdentity.status(this) == SignerIdentity.Status.MISMATCH) {
+            setContent {
+                AetherTheme {
+                    Surface(modifier = Modifier.fillMaxSize()) {
+                        TamperScreen(onExit = { finishAffinity() })
+                    }
+                }
+            }
+            return
+        }
+
         profileStore = ProfileStore(applicationContext)
         onboardingStore = OnboardingStore(applicationContext)
 

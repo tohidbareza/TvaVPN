@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">tvaVPN</string>
-    <string name="tagline">Freedom, in one tap</string>
 
     <string name="advanced">Advanced settings</string>
 
@@ -42,8 +41,8 @@
     <string name="reconnect_attempt">Attempt %1$d of %2$d</string>
 
     <string name="notif_channel">VPN status</string>
-    <string name="notif_channel_desc">Shows the Aether connection status</string>
-    <string name="notif_title">Aether</string>
+    <string name="notif_channel_desc">Shows the tvaVPN connection status</string>
+    <string name="notif_title">tvaVPN</string>
     <!--
       1.3.1, issue #20: the notification's action BUTTON used to be labelled with
       state_disconnecting ("Disconnecting…"), so the ongoing notification read
@@ -90,7 +89,7 @@
     <string name="menu_open">Open menu</string>
 
     <!-- Quick Settings tile -->
-    <string name="qs_tile_label">Aether</string>
+    <string name="qs_tile_label">tvaVPN</string>
 
     <!-- Share VPN panel -->
     <string name="share_title">Share VPN</string>
@@ -186,14 +185,6 @@
     <string name="about_core_version">Engine (core) version %1$s</string>
     <string name="about_patch_level">Build: %1$s</string>
     <!-- 1.2.9-r3 (audit F-1 mitigation): is this the build we published? -->
-    <string name="about_signer">Signing certificate: %1$s</string>
-    <string name="about_signer_ok">Matches the official Aether certificate.</string>
-    <string name="about_signer_bad">This copy was signed by someone else, not by the Aether project. A VPN app sees all of your traffic — reinstall from the official release page.</string>
-    <string name="about_signer_unpinned">No official fingerprint is compiled into this build, so it cannot be checked here.</string>
-    <string name="about_signer_unknown">The system did not report a signing certificate for this app.</string>
-    <string name="about_apk_hash">APK SHA-256: %1$s</string>
-    <string name="about_apk_hash_loading">calculating…</string>
-    <string name="about_verify_hint">Compare this hash with the one published for your download on the official releases page before trusting an update.</string>
 
     <!-- Engine v1.5.0 features -->
     <string name="section_zerotrust">Zero Trust (organization)</string>
@@ -229,7 +220,7 @@
     <string name="dns_hint">1.1.1.1, 1.0.0.1</string>
     <string name="dns_help">Leave empty for the engine default (1.1.1.1, 1.0.0.1). Invalid entries are ignored.</string>
     <!-- Feature merge: home-screen widget, onboarding, ping, crash report -->
-    <string name="widget_desc">Connect or disconnect Aether with one tap</string>
+    <string name="widget_desc">Connect or disconnect tvaVPN with one tap</string>
     <string name="widget_toggle_desc">Toggle connection</string>
     <string name="ping_label">Ping</string>
     <string name="ping_measuring">Measuring…</string>
@@ -238,13 +229,13 @@
     <string name="onboarding_skip">Skip</string>
     <string name="onboarding_next">Next</string>
     <string name="onboarding_start">Get started</string>
-    <string name="onboarding_title_1">Welcome to Aether</string>
+    <string name="onboarding_title_1">Welcome to tvaVPN</string>
     <string name="onboarding_body_1">A fast, secure tunnel that beats censorship. One tap connects you through MASQUE, WireGuard or WARP×2.</string>
     <string name="onboarding_title_2">Smart protocol selection</string>
     <string name="onboarding_body_2">Smart mode analyzes your network and picks the protocol that actually works, with anti-DPI obfuscation when needed.</string>
     <string name="onboarding_title_3">Private by design</string>
     <string name="onboarding_body_3">No accounts, no logs, no trackers. Android will ask for VPN permission on your first connect; that is the system keeping you in control.</string>
-    <string name="crash_title">Aether stopped unexpectedly</string>
+    <string name="crash_title">tvaVPN stopped unexpectedly</string>
     <string name="crash_subtitle">The details below were saved by the crash handler. You can copy them into a bug report.</string>
     <string name="crash_copy">Copy details</string>
     <string name="crash_copied">Copied</string>
@@ -305,7 +296,6 @@
     <!-- 1.2.7: the settings screen, the in-app language switch and the
          cached-endpoint budget -->
     <string name="settings_hero_title">Your tunnel</string>
-    <string name="settings_hero_subtitle">Everything that shapes how Aether connects, in one place</string>
     <string name="settings_status_ready">Ready to edit</string>
     <string name="settings_status_locked">Locked while connected</string>
     <string name="settings_title">Settings</string>
@@ -335,10 +325,10 @@
     <string name="cat_appearance_desc">Choose English or Persian, or follow the phone</string>
 
     <string name="backend_label">Network backend</string>
-    <string name="backend_help_aether">One hop through the bundled Aether/WARP engine. Fastest.</string>
-    <string name="backend_help_chained">Two hops: Aether connects first, then Psiphon tunnels through it. Your exit IP becomes Psiphon\'s, so sites that block Aether/WARP addresses open again.</string>
+    <string name="backend_help_aether">One hop through the bundled tvaVPN/WARP engine. Fastest.</string>
+    <string name="backend_help_chained">Two hops: tvaVPN connects first, then Psiphon tunnels through it. Your exit IP becomes Psiphon\'s, so sites that block tvaVPN/WARP addresses open again.</string>
     <string name="exit_country_label">Exit country</string>
-    <string name="exit_help_aether">Aether/WARP chooses its own anycast exit.</string>
+    <string name="exit_help_aether">tvaVPN/WARP chooses its own anycast exit.</string>
     <string name="exit_help_psiphon">Psiphon treats this as a hard region filter. If it cannot establish there, the app retries automatically with an automatic exit.</string>
 
     <string name="fast_endpoint_title">Only reuse a fast endpoint</string>
@@ -407,28 +397,28 @@
     <string name="state_tor_bootstrap">Building Tor circuits…</string>
     <string name="state_tor_bootstrap_pct">Reaching the Tor network… %1$d%%</string>
     <string name="state_tor_bridges">Tor is being blocked — trying bridges…</string>
-    <string name="err_tor_blocked">Tor stopped at %1$d%% and could not reach the Tor network. This is what a network that filters Tor looks like. Turn bridges on under Settings → Tor, or use the Aether → Tor mode: Tor is then dialled through the tunnel, where the operator cannot see or block it.</string>
-    <string name="err_tor_no_progress">The engine started but Tor never reported any progress towards the Tor network. Check that the connection is up, then try the Aether → Tor mode, which builds Tor inside the tunnel.</string>
-    <string name="err_tor_no_stream">Tor reached the network but no connection could be opened through it. Try again — or use the Aether → Tor mode if this repeats.</string>
-    <string name="err_tor_bootstrap">Tor could not reach the Tor network in time. On a network that blocks Tor, use the Aether → Tor mode: the connection is then built inside the tunnel, where it cannot be blocked.</string>
-    <string name="backend_help_tor">Tor alone, without the Aether tunnel. Your exit is a Tor exit node and your traffic passes three relays, which is the slowest and the most private of the modes. Tor has to reach the Tor network by itself here, so it uses bridges when it is blocked.</string>
-    <string name="backend_help_aether_tor">Two hops: Aether connects first, then Tor is built INSIDE that tunnel. The network you are on sees only Aether’s obfuscated transport, never Tor — so this is the mode to use where Tor is blocked. Your exit is a Tor exit node.</string>
+    <string name="err_tor_blocked">Tor stopped at %1$d%% and could not reach the Tor network. This is what a network that filters Tor looks like. Turn bridges on under Settings → Tor, or use the tvaVPN → Tor mode: Tor is then dialled through the tunnel, where the operator cannot see or block it.</string>
+    <string name="err_tor_no_progress">The engine started but Tor never reported any progress towards the Tor network. Check that the connection is up, then try the tvaVPN → Tor mode, which builds Tor inside the tunnel.</string>
+    <string name="err_tor_no_stream">Tor reached the network but no connection could be opened through it. Try again — or use the tvaVPN → Tor mode if this repeats.</string>
+    <string name="err_tor_bootstrap">Tor could not reach the Tor network in time. On a network that blocks Tor, use the tvaVPN → Tor mode: the connection is then built inside the tunnel, where it cannot be blocked.</string>
+    <string name="backend_help_tor">Tor alone, without the tvaVPN tunnel. Your exit is a Tor exit node and your traffic passes three relays, which is the slowest and the most private of the modes. Tor has to reach the Tor network by itself here, so it uses bridges when it is blocked.</string>
+    <string name="backend_help_aether_tor">Two hops: tvaVPN connects first, then Tor is built INSIDE that tunnel. The network you are on sees only tvaVPN’s obfuscated transport, never Tor — so this is the mode to use where Tor is blocked. Your exit is a Tor exit node.</string>
     <string name="backend_help_tor_psiphon">Three hops: Tor first, then Psiphon dialled through it. Your exit IP is Psiphon’s, reached from a Tor address, so sites that block Tor exit nodes open again while your own address stays behind Tor. The slowest mode.</string>
     <string name="exit_help_tor">Tor chooses its own exit node, and a new one per circuit. No setting can pin it to a country.</string>
     <string name="section_tor">Tor</string>
     <string name="tor_bridges_title">Bridges</string>
     <string name="tor_bridges_desc">How Tor reaches the network when it is blocked.</string>
-    <string name="tor_bridges_not_needed">Not needed in this mode: Tor is dialled through the Aether tunnel, so the network you are on never sees it.</string>
+    <string name="tor_bridges_not_needed">Not needed in this mode: Tor is dialled through the tvaVPN tunnel, so the network you are on never sees it.</string>
     <string name="tor_bridges_auto">Automatic</string>
     <string name="tor_bridges_always">Always</string>
     <string name="tor_bridges_off">Off</string>
     <string name="tor_bridge_lines_title">Own bridge lines</string>
     <string name="tor_bridge_lines_hint">obfs4 192.0.2.55:38114 &lt;FINGERPRINT&gt; cert=… iat-mode=0</string>
     <string name="tor_bridge_lines_desc">One per line, in the format bridges.torproject.org hands out. Leave empty to use the bridges the app fetches for your country. A line naming a transport the app does not ship is ignored.</string>
-    <string name="tor_group_footer">Tor carries TCP only — in every app, on every platform. Aether answers DNS over TCP inside Tor and drops other UDP, so QUIC-capable apps fall back to TCP. That is normal and nothing is leaking: dropped UDP goes nowhere, least of all around Tor. Expect noticeably higher latency, and expect the first connect to take a while — Tor downloads its directory before it can build a circuit.</string>
+    <string name="tor_group_footer">Tor carries TCP only — in every app, on every platform. tvaVPN answers DNS over TCP inside Tor and drops other UDP, so QUIC-capable apps fall back to TCP. That is normal and nothing is leaking: dropped UDP goes nowhere, least of all around Tor. Expect noticeably higher latency, and expect the first connect to take a while — Tor downloads its directory before it can build a circuit.</string>
 
     <!-- Tor reverse chain (1.3.0) -->
-    <string name="backend_help_tor_aether">The reverse chain: Tor first, then the Aether tunnel built INSIDE it. Your exit is a WARP address — the same as plain Aether — but the network you are on sees only Tor, and cannot tell that a VPN tunnel exists at all. Use it where Cloudflare/WARP itself is blocked or throttled but Tor still gets through. Carries normal UDP, unlike the Tor-exit modes.</string>
+    <string name="backend_help_tor_aether">The reverse chain: Tor first, then the tvaVPN tunnel built INSIDE it. Your exit is a WARP address — the same as plain tvaVPN — but the network you are on sees only Tor, and cannot tell that a VPN tunnel exists at all. Use it where Cloudflare/WARP itself is blocked or throttled but Tor still gets through. Carries normal UDP, unlike the Tor-exit modes.</string>
     <string name="protocol_forced_reverse">Fixed to MASQUE over HTTP/2 in this mode. Tor carries TCP only and WARP’s WireGuard endpoints answer on UDP alone, so the engine refuses WireGuard and WARP×2 here.</string>
 
     <!-- Tor tuning (1.3.0) -->
@@ -478,7 +468,7 @@
 
     <!-- Battery optimisation hint (1.3.1, issue #5) -->
     <string name="battery_title">Allow background running</string>
-    <string name="battery_desc">Android is still allowed to suspend Aether. That is what drops the tunnel when the screen goes off — it still says connected but nothing loads. Tap to exempt it.</string>
+    <string name="battery_desc">Android is still allowed to suspend tvaVPN. That is what drops the tunnel when the screen goes off — it still says connected but nothing loads. Tap to exempt it.</string>
 
     <!-- Custom ECHConfigList (1.3.1, issue #44) -->
     <string name="ech_config_label">ECHConfigList (base64, optional)</string>
@@ -502,7 +492,7 @@
     <string name="state_smart_plus_racing">Trying several routes at once…</string>
 
     <string name="protocol_auto_race">Smart tries two routes at the same time here and remembers which one worked on this network, so the next connect is quick.</string>
-    <string name="protocol_auto_ladder">Smart tries one route at a time on this backend. Racing needs the plain Aether backend and automatic endpoint selection.</string>
+    <string name="protocol_auto_ladder">Smart tries one route at a time on this backend. Racing needs the plain tvaVPN backend and automatic endpoint selection.</string>
     <!-- 1.4.0-r5: VPN sharing rewrite -->
     <string name="share_status_live">Sharing live · %1$d connection(s)</string>
     <string name="share_off_hint">Turn on sharing, pick a mode, and the addresses to enter on the other device appear here.</string>
@@ -528,7 +518,7 @@
     <string name="share_ip_label">Phone IP address</string>
     <string name="share_pac_label">Automatic proxy (PAC) URL — easiest, fail‑closed</string>
     <string name="share_copy_all">Copy all details</string>
-    <string name="share_copy_all_label">Aether share details</string>
+    <string name="share_copy_all_label">tvaVPN share details</string>
     <string name="share_copied_all">All details copied</string>
     <string name="share_steps_title">How to connect</string>
     <string name="share_step_home_1">Make sure the other device is on the same Wi‑Fi as this phone.</string>
@@ -649,7 +639,7 @@
 
     <!-- 1.5.0: custom configs -->
     <string name="cc_title">Custom configs</string>
-    <string name="cc_nav_desc">Your own V2Ray/Xray and NapsternetV configs, alone or chained with Aether, Psiphon and Tor</string>
+    <string name="cc_nav_desc">Your own V2Ray/Xray and NapsternetV configs, alone or chained with tvaVPN, Psiphon and Tor</string>
     <string name="cc_off">Off</string>
     <string name="cc_enable">Use a custom config</string>
     <string name="cc_enable_desc">On: the next connect runs “%1$s” in the chain below</string>
@@ -711,7 +701,7 @@
     <string name="cc_ping_noreply">No response</string>
     <string name="cc_ping_invalid">Invalid config</string>
     <string name="cc_ping_nonet">No internet</string>
-    <string name="cc_ping_footer">The ping is a real delay test, like v2rayNG\'s: each config runs in the Xray core exactly as a direct connection would, and one request (generate_204) is sent through it. The number is the time for that request, handshake included. A config that carries nothing reports -1, with the reason: “Offline / server down” — the server\'s name does not resolve or its port is closed; “Filtered” — the network drops or resets the connection to the server (chaining it behind Aether or Tor can help); “No response” — the server accepts connections but the config carried nothing (expired, wrong key or user, or its protocol is blocked); “Invalid config” — the Xray core refuses the config.</string>
+    <string name="cc_ping_footer">The ping is a real delay test, like v2rayNG\'s: each config runs in the Xray core exactly as a direct connection would, and one request (generate_204) is sent through it. The number is the time for that request, handshake included. A config that carries nothing reports -1, with the reason: “Offline / server down” — the server\'s name does not resolve or its port is closed; “Filtered” — the network drops or resets the connection to the server (chaining it behind tvaVPN or Tor can help); “No response” — the server accepts connections but the config carried nothing (expired, wrong key or user, or its protocol is blocked); “Invalid config” — the Xray core refuses the config.</string>
     <string name="cc_err_psiphon_direct">Psiphon could not reach its own network from here, so it has nothing to hand the config. Use the other direction (Config → Psiphon) on this network: there Psiphon dials through your config.</string>
     <string name="cc_err_expired">This custom config has expired (its author set an expiry date).</string>
     <string name="cc_err_mobile_only">This custom config may only be used on mobile data.</string>
@@ -732,9 +722,16 @@
     <string name="backup_exported">Settings saved</string>
     <string name="backup_export_failed">Could not save the file</string>
     <string name="backup_imported">Settings imported</string>
-    <string name="backup_err_invalid">This is not a valid Aether settings file</string>
-    <string name="backup_err_newer">This file was made by a newer version of Aether</string>
+    <string name="backup_err_invalid">This is not a valid tvaVPN settings file</string>
+    <string name="backup_err_newer">This file was made by a newer version of tvaVPN</string>
     <string name="backup_confirm_title">Import these settings?</string>
     <string name="backup_confirm_body">Your current settings will be replaced. The Zero Trust sign-in and the upstream proxy on this phone are kept. Only import files from people you trust: a settings file can change DNS servers, endpoints and routes.</string>
     <string name="backup_confirm_ok">Import</string>
+
+    <!-- Tamper block: shown when the APK signature is not the official one -->
+    <string name="tamper_title">Unofficial or modified copy</string>
+    <string name="tamper_body">This copy of tvaVPN is not signed with the official key, so it may have been modified or repackaged. A VPN app can see all of your traffic, so it has been stopped. Please uninstall it and install the app only from the official GitHub releases page.</string>
+    <string name="tamper_open_official">Open official GitHub page</string>
+    <string name="tamper_exit">Exit</string>
+    <string name="tamper_short">Unofficial copy: connection blocked</string>
 </resources>
