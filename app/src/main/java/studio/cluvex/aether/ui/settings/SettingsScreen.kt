@@ -219,7 +219,6 @@ private fun SettingsHomePage(
         settingsSection {
             SettingsHero(
                 title = stringResource(R.string.settings_hero_title),
-                subtitle = stringResource(R.string.settings_hero_subtitle),
                 icon = Icons.Rounded.Shield,
                 chips = listOf(
                     backendShortLabel(profile.backend),
@@ -1638,12 +1637,12 @@ private fun PanelPage(
 
 @Composable
 private fun backendShortLabel(backend: TransportBackend): String = when (backend) {
-    TransportBackend.AETHER -> "Aether"
-    TransportBackend.AETHER_PSIPHON -> "Aether \u2192 Psiphon"
+    TransportBackend.AETHER -> "tvaVPN"
+    TransportBackend.AETHER_PSIPHON -> "tvaVPN \u2192 Psiphon"
     TransportBackend.TOR -> "Tor"
-    TransportBackend.AETHER_TOR -> "Aether \u2192 Tor"
+    TransportBackend.AETHER_TOR -> "tvaVPN \u2192 Tor"
     TransportBackend.TOR_PSIPHON -> "Tor \u2192 Psiphon"
-    TransportBackend.TOR_AETHER -> "Tor \u2192 Aether"
+    TransportBackend.TOR_AETHER -> "Tor \u2192 tvaVPN"
 }
 
 @Composable

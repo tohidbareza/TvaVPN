@@ -1,4 +1,6 @@
 import com.android.build.api.variant.FilterConfiguration.FilterType.ABI
+import java.security.KeyStore
+import java.security.MessageDigest
 import java.util.Base64
 import java.util.Properties
 
@@ -7,6 +9,9 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
 }
+
+// Output files are named TvaVPN-<abi>-<buildType>.apk
+base { archivesName.set("TvaVPN") }
 
 // Human-friendly ABI -> versionCode offset so each split APK gets a unique code.
 //
@@ -198,7 +203,27 @@ android {
         // Source order: the real release certificate if this repository pins one,
         // otherwise the CI certificate it actually publishes with. An unpinned
         // build compiles in "" and reports "authenticity cannot be checked".
-        val expectedSigner = listOf(
+        //
+        // TAMPER BLOCK (tvaVPN): when a private release keystore is in use, the
+        // fingerprint is read straight from THAT keystore at build time, so every
+        // release you build pins itself to your own key with no manual step. The
+        // app then refuses to run (and refuses to connect) if it is ever installed
+        // with a different signature. Debug builds have no keystore and stay
+        // unpinned, so they keep running normally.
+        val keystoreSigner: String = if (hasReleaseKeystore) {
+            runCatching {
+                val storeFile = rootProject.file(releaseStorePath!!)
+                val storePass = signingValue("storePassword", "KEYSTORE_PASSWORD")!!.toCharArray()
+                val alias = signingValue("keyAlias", "KEY_ALIAS")!!
+                val ks = KeyStore.getInstance(storeFile, storePass)
+                val cert = ks.getCertificate(alias)
+                MessageDigest.getInstance("SHA-256").digest(cert.encoded)
+                    .joinToString("") { "%02x".format(it) }
+            }.getOrDefault("")
+        } else {
+            ""
+        }
+        val fileSigner = listOf(
             rootProject.file(".github/expected-signer.txt"),
             rootProject.file(".github/expected-signer-ci.txt"),
         ).asSequence()
@@ -208,6 +233,7 @@ android {
             }
             .firstOrNull()
             .orEmpty()
+        val expectedSigner = keystoreSigner.ifEmpty { fileSigner }
         buildConfigField("String", "EXPECTED_SIGNER", "\"$expectedSigner\"")
 
         // How this APK was signed, as known at configuration time. CI exports

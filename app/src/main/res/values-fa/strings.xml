@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">tvaVPN</string>
-    <string name="tagline">آزادی، در یک لمس</string>
 
     <string name="advanced">تنظیمات پیشرفته</string>
 
@@ -180,14 +179,6 @@
     <string name="about_core_version">نسخهٔ هسته (⁨Core⁩) %1$s</string>
     <string name="about_patch_level">نسخهٔ بیلد: %1$s</string>
     <!-- 1.2.9-r3 (کاهش ریسک F-1): آیا این همان بیلدی است که منتشر شده؟ -->
-    <string name="about_signer">گواهی امضا: %1$s</string>
-    <string name="about_signer_ok">با گواهی رسمی ⁨Aether⁩ یکسان است.</string>
-    <string name="about_signer_bad">این نسخه با کلید شخص دیگری امضا شده، نه توسط پروژهٔ ⁨Aether⁩. یک برنامهٔ ⁨VPN⁩ همهٔ ترافیک شما را می‌بیند — از صفحهٔ رسمی انتشار دوباره نصب کنید.</string>
-    <string name="about_signer_unpinned">اثر انگشت رسمی در این بیلد کامپایل نشده، پس همین‌جا قابل بررسی نیست.</string>
-    <string name="about_signer_unknown">سیستم گواهی امضایی برای این برنامه گزارش نکرد.</string>
-    <string name="about_apk_hash">‏⁨SHA-256⁩ فایل ⁨APK⁩: %1$s</string>
-    <string name="about_apk_hash_loading">در حال محاسبه…</string>
-    <string name="about_verify_hint">پیش از اعتماد به یک به‌روزرسانی، این هش را با هشی که در صفحهٔ رسمی انتشار برای فایل شما اعلام شده مقایسه کنید.</string>
 
     <!-- قابلیت‌های هستهٔ ۱.۵.۰ -->
     <string name="section_zerotrust">‏⁨Zero Trust⁩ (سازمانی)</string>
@@ -223,7 +214,7 @@
     <string name="dns_hint">1.1.1.1, 1.0.0.1</string>
     <string name="dns_help">برای مقدار پیش‌فرض هسته (1.1.1.1, 1.0.0.1) خالی بگذارید. ورودی‌های نامعتبر نادیده گرفته می‌شوند.</string>
     <!-- Feature merge: widget, onboarding, ping, crash report -->
-    <string name="widget_desc">اتصال یا قطع ⁨Aether⁩ با یک لمس</string>
+    <string name="widget_desc">اتصال یا قطع ⁨tvaVPN⁩ با یک لمس</string>
     <string name="widget_toggle_desc">تغییر وضعیت اتصال</string>
     <string name="ping_label">پینگ</string>
     <string name="ping_measuring">در حال اندازه‌گیری…</string>
@@ -232,13 +223,13 @@
     <string name="onboarding_skip">رد کردن</string>
     <string name="onboarding_next">بعدی</string>
     <string name="onboarding_start">شروع</string>
-    <string name="onboarding_title_1">به ⁨Aether⁩ خوش آمدید</string>
+    <string name="onboarding_title_1">به ⁨tvaVPN⁩ خوش آمدید</string>
     <string name="onboarding_body_1">تانل سریع و امن برای عبور از سانسور. با یک لمس از طریق ⁨MASQUE⁩، ⁨WireGuard⁩ یا وارپ×۲ متصل شوید.</string>
     <string name="onboarding_title_2">انتخاب هوشمند پروتکل</string>
     <string name="onboarding_body_2">حالت هوشمند شبکه شما را بررسی می‌کند و پروتکلی را انتخاب می‌کند که واقعاً کار می‌کند، در صورت نیاز با مبهم‌سازی ضد ⁨DPI⁩.</string>
     <string name="onboarding_title_3">حریم خصوصی از همان ابتدا</string>
     <string name="onboarding_body_3">بدون حساب کاربری، بدون لاگ، بدون ردیاب. اندروید در اولین اتصال اجازه ⁨VPN⁩ می‌خواهد؛ این سیستم است که کنترل را به شما می‌دهد.</string>
-    <string name="crash_title">‏⁨Aether⁩ به‌طور غیرمنتظره متوقف شد</string>
+    <string name="crash_title">‏⁨tvaVPN⁩ به‌طور غیرمنتظره متوقف شد</string>
     <string name="crash_subtitle">جزئیات زیر توسط کنترل‌کننده خرابی ذخیره شده است. می‌توانید آن را در گزارش خطا کپی کنید.</string>
     <string name="crash_copy">کپی جزئیات</string>
     <string name="crash_copied">کپی شد</string>
@@ -298,7 +289,6 @@
 
     <!-- ۱.۲.۷: صفحهٔ تنظیمات، انتخاب زبان در خود برنامه و بودجهٔ اندپوینت کش‌شده -->
     <string name="settings_hero_title">تونل شما</string>
-    <string name="settings_hero_subtitle">همه‌چیزِ اتصال، یک‌جا و مرتب</string>
     <string name="settings_status_ready">آماده‌ی ویرایش</string>
     <string name="settings_status_locked">در حین اتصال قفل است</string>
     <string name="settings_title">تنظیمات</string>
@@ -328,10 +318,10 @@
     <string name="cat_appearance_desc">انتخاب فارسی یا انگلیسی، یا پیروی از گوشی</string>
 
     <string name="backend_label">بک‌اند شبکه</string>
-    <string name="backend_help_aether">یک هاپ از موتور اتر/⁨WARP⁩ همراه برنامه. سریع‌ترین حالت.</string>
-    <string name="backend_help_chained">دو هاپ: اول اتر وصل می‌شود، بعد سایفون از داخل آن تونل می‌زند. آی‌پی خروجی شما به سایفون تغییر می‌کند، پس سایت‌هایی که آدرس‌های اتر/⁨WARP⁩ را بلاک می‌کنند باز می‌شوند.</string>
+    <string name="backend_help_aether">یک هاپ از موتور tvaVPN/⁨WARP⁩ همراه برنامه. سریع‌ترین حالت.</string>
+    <string name="backend_help_chained">دو هاپ: اول tvaVPN وصل می‌شود، بعد سایفون از داخل آن تونل می‌زند. آی‌پی خروجی شما به سایفون تغییر می‌کند، پس سایت‌هایی که آدرس‌های tvaVPN/⁨WARP⁩ را بلاک می‌کنند باز می‌شوند.</string>
     <string name="exit_country_label">کشور خروجی</string>
-    <string name="exit_help_aether">اتر/⁨WARP⁩ خودش خروجی ⁨anycast⁩ را انتخاب می‌کند.</string>
+    <string name="exit_help_aether">tvaVPN/⁨WARP⁩ خودش خروجی ⁨anycast⁩ را انتخاب می‌کند.</string>
     <string name="exit_help_psiphon">سایفون این را یک فیلتر سخت‌گیرانه می‌داند. اگر نتواند در آن کشور وصل شود، برنامه به‌صورت خودکار با خروجی خودکار دوباره تلاش می‌کند.</string>
 
     <string name="fast_endpoint_title">فقط اندپوینت سریع را دوباره استفاده کن</string>
@@ -389,28 +379,28 @@
     <string name="state_tor_bootstrap">در حال ساخت مدارهای تور…</string>
     <string name="state_tor_bootstrap_pct">در حال رسیدن به شبکهٔ تور… %1$d%%</string>
     <string name="state_tor_bridges">تور بلاک شده است — تلاش با پل‌ها…</string>
-    <string name="err_tor_blocked">تور در %1$d%% متوقف شد و نتوانست به شبکهٔ تور برسد. این همان چیزی است که یک شبکهٔ فیلترکنندهٔ تور تولید می‌کند. در تنظیمات → تور پل‌ها را روشن کنید، یا از حالت اتر → تور استفاده کنید: در آن حالت تور از داخل تونل برقرار می‌شود و اپراتور نه آن را می‌بیند و نه می‌تواند بلاکش کند.</string>
-    <string name="err_tor_no_progress">موتور اجرا شد اما تور هیچ پیشرفتی به‌سوی شبکهٔ تور گزارش نکرد. از برقرار بودن اینترنت مطمئن شوید و سپس حالت اتر → تور را امتحان کنید که تور را داخل تونل می‌سازد.</string>
-    <string name="err_tor_no_stream">تور به شبکه رسید اما هیچ اتصالی از داخل آن باز نشد. دوباره تلاش کنید — و اگر تکرار شد از حالت اتر → تور استفاده کنید.</string>
-    <string name="err_tor_bootstrap">تور نتوانست به‌موقع به شبکهٔ تور برسد. در شبکه‌ای که تور را بلاک می‌کند، از حالت اتر → تور استفاده کنید: اتصال در این حالت داخل تونل ساخته می‌شود و قابل بلاک شدن نیست.</string>
-    <string name="backend_help_tor">تور به تنهایی، بدون تونل اتر. خروجی شما یک گره خروجی تور است و ترافیک از سه رله می‌گذرد: کندترین و خصوصی‌ترین حالت. اینجا تور باید خودش به شبکهٔ تور برسد، پس اگر بلاک باشد از پل استفاده می‌کند.</string>
-    <string name="backend_help_aether_tor">دو هاپ: اول اتر وصل می‌شود، بعد تور داخل همان تونل ساخته می‌شود. شبکه‌ای که در آن هستید فقط ترانسپورت مخفی‌شدهٔ اتر را می‌بیند، هرگز تور را — پس هر جا تور بلاک است، این حالت را انتخاب کنید. خروجی شما گره خروجی تور است.</string>
+    <string name="err_tor_blocked">تور در %1$d%% متوقف شد و نتوانست به شبکهٔ تور برسد. این همان چیزی است که یک شبکهٔ فیلترکنندهٔ تور تولید می‌کند. در تنظیمات → تور پل‌ها را روشن کنید، یا از حالت tvaVPN → تور استفاده کنید: در آن حالت تور از داخل تونل برقرار می‌شود و اپراتور نه آن را می‌بیند و نه می‌تواند بلاکش کند.</string>
+    <string name="err_tor_no_progress">موتور اجرا شد اما تور هیچ پیشرفتی به‌سوی شبکهٔ تور گزارش نکرد. از برقرار بودن اینترنت مطمئن شوید و سپس حالت tvaVPN → تور را امتحان کنید که تور را داخل تونل می‌سازد.</string>
+    <string name="err_tor_no_stream">تور به شبکه رسید اما هیچ اتصالی از داخل آن باز نشد. دوباره تلاش کنید — و اگر تکرار شد از حالت tvaVPN → تور استفاده کنید.</string>
+    <string name="err_tor_bootstrap">تور نتوانست به‌موقع به شبکهٔ تور برسد. در شبکه‌ای که تور را بلاک می‌کند، از حالت tvaVPN → تور استفاده کنید: اتصال در این حالت داخل تونل ساخته می‌شود و قابل بلاک شدن نیست.</string>
+    <string name="backend_help_tor">تور به تنهایی، بدون تونل tvaVPN. خروجی شما یک گره خروجی تور است و ترافیک از سه رله می‌گذرد: کندترین و خصوصی‌ترین حالت. اینجا تور باید خودش به شبکهٔ تور برسد، پس اگر بلاک باشد از پل استفاده می‌کند.</string>
+    <string name="backend_help_aether_tor">دو هاپ: اول tvaVPN وصل می‌شود، بعد تور داخل همان تونل ساخته می‌شود. شبکه‌ای که در آن هستید فقط ترانسپورت مخفی‌شدهٔ tvaVPN را می‌بیند، هرگز تور را — پس هر جا تور بلاک است، این حالت را انتخاب کنید. خروجی شما گره خروجی تور است.</string>
     <string name="backend_help_tor_psiphon">سه هاپ: اول تور، بعد سایفون از داخل آن. آی‌پی خروجی شما مال سایفون است که از یک آدرس تور به آن رسیده‌اید؛ پس سایت‌هایی که گره‌های خروجی تور را بلاک می‌کنند باز می‌شوند و آدرس خود شما پشت تور می‌ماند. کندترین حالت.</string>
     <string name="exit_help_tor">تور خودش گره خروجی را انتخاب می‌کند، و برای هر مدار یکی تازه. هیچ تنطیمی آن را به یک کشور محدود نمی‌کند.</string>
     <string name="section_tor">تور</string>
     <string name="tor_bridges_title">پل‌ها</string>
     <string name="tor_bridges_desc">وقتی تور بلاک است، چگونه به شبکه برسد.</string>
-    <string name="tor_bridges_not_needed">در این حالت لازم نیست: تور از داخل تونل اتر وصل می‌شود، پس شبکه‌ای که در آن هستید هرگز آن را نمی‌بیند.</string>
+    <string name="tor_bridges_not_needed">در این حالت لازم نیست: تور از داخل تونل tvaVPN وصل می‌شود، پس شبکه‌ای که در آن هستید هرگز آن را نمی‌بیند.</string>
     <string name="tor_bridges_auto">خودکار</string>
     <string name="tor_bridges_always">همیشه</string>
     <string name="tor_bridges_off">خاموش</string>
     <string name="tor_bridge_lines_title">خطوط پل خودتان</string>
     <string name="tor_bridge_lines_hint">⁨obfs4 192.0.2.55:38114 &lt;FINGERPRINT&gt; cert=… iat-mode=0⁩</string>
     <string name="tor_bridge_lines_desc">هر خط یکی، در قالبی که ⁨bridges.torproject.org⁩ می‌دهد. خالی بگذارید تا برنامه پل‌های مناسب کشور شما را خودش بگیرد. خطی که نام ترانسپورتی را بگوید که برنامه ندارد، نادیده گرفته می‌شود.</string>
-    <string name="tor_group_footer">تور فقط ⁨TCP⁩ را حمل می‌کند — در هر برنامه و روی هر پلتفرم. اتر ⁨DNS⁩ را روی ⁨TCP⁩ داخل تور پاسخ می‌دهد و بقیهٔ ⁨UDP⁩ را دور می‌ریزد، پس برنامه‌هایی که ⁨QUIC⁩ دارند به ⁨TCP⁩ برمی‌گردند. این طبیعی است و چیزی لیک نمی‌شود: ⁨UDP⁩ دورریخته به هیچ‌جا نمی‌رود، چه برسد به دور زدن تور. منتطر تاخیر محسوساً بیشتر باشید، و اینکه اولین اتصال طول بکشد — تور قبل از ساخت مدار، دایرکتوری خود را دانلود می‌کند.</string>
+    <string name="tor_group_footer">تور فقط ⁨TCP⁩ را حمل می‌کند — در هر برنامه و روی هر پلتفرم. tvaVPN ⁨DNS⁩ را روی ⁨TCP⁩ داخل تور پاسخ می‌دهد و بقیهٔ ⁨UDP⁩ را دور می‌ریزد، پس برنامه‌هایی که ⁨QUIC⁩ دارند به ⁨TCP⁩ برمی‌گردند. این طبیعی است و چیزی لیک نمی‌شود: ⁨UDP⁩ دورریخته به هیچ‌جا نمی‌رود، چه برسد به دور زدن تور. منتطر تاخیر محسوساً بیشتر باشید، و اینکه اولین اتصال طول بکشد — تور قبل از ساخت مدار، دایرکتوری خود را دانلود می‌کند.</string>
 
     <!-- Tor reverse chain (1.3.0) -->
-    <string name="backend_help_tor_aether">زنجیرهٔ معکوس: اول تور، بعد تونل اتر داخل آن ساخته می‌شود. خروجی شما یک آدرس ⁨WARP⁩ است — همان چیزی که اتر ساده می‌دهد — اما شبکه‌ای که در آن هستید فقط تور را می‌بیند و اصلاً نمی‌تواند بفهمد که تونل ⁨VPN⁩‌ی وجود دارد. جایی به کار بیاید که خود ⁨Cloudflare/WARP⁩ بلاک یا کند شده اما تور هنوز رد می‌شود. برخلاف حالت‌های با خروجی تور، ⁨UDP⁩ عادی را حمل می‌کند.</string>
+    <string name="backend_help_tor_aether">زنجیرهٔ معکوس: اول تور، بعد تونل tvaVPN داخل آن ساخته می‌شود. خروجی شما یک آدرس ⁨WARP⁩ است — همان چیزی که tvaVPN ساده می‌دهد — اما شبکه‌ای که در آن هستید فقط تور را می‌بیند و اصلاً نمی‌تواند بفهمد که تونل ⁨VPN⁩‌ی وجود دارد. جایی به کار بیاید که خود ⁨Cloudflare/WARP⁩ بلاک یا کند شده اما تور هنوز رد می‌شود. برخلاف حالت‌های با خروجی تور، ⁨UDP⁩ عادی را حمل می‌کند.</string>
     <string name="protocol_forced_reverse">در این حالت روی ⁨MASQUE⁩ بر ⁨HTTP/2⁩ قفل است. تور فقط ⁨TCP⁩ را حمل می‌کند و اندپوینت‌های ⁨WireGuard⁩ مربوط به ⁨WARP⁩ فقط روی ⁨UDP⁩ پاسخ می‌دهند، پس موتور اینجا ⁨WireGuard⁩ و ⁨WARP⁩×۲ را قبول نمی‌کند.</string>
 
     <!-- Tor tuning (1.3.0) -->
@@ -460,7 +450,7 @@
 
     <!-- راهنمای بهینه‌سازی باتری -->
     <string name="battery_title">اجازهٔ اجرا در پس‌زمینه</string>
-    <string name="battery_desc">اندروید هنوز اجازه دارد اتر را متوقف کند. همین باعث می‌شود با خاموش شدن صفحه تونل بیفتد — می‌نویسد وصل است ولی چیزی باز نمی‌شود. برای معاف کردنش بزنید.</string>
+    <string name="battery_desc">اندروید هنوز اجازه دارد tvaVPN را متوقف کند. همین باعث می‌شود با خاموش شدن صفحه تونل بیفتد — می‌نویسد وصل است ولی چیزی باز نمی‌شود. برای معاف کردنش بزنید.</string>
 
     <!-- ECHConfigList دلخواه -->
     <string name="ech_config_label">‏⁨ECHConfigList (base64⁩، اختیاری)</string>
@@ -473,7 +463,7 @@
     <string name="state_smart_plus_racing">چند مسیر را هم‌زمان امتحان می‌کند…</string>
 
     <string name="protocol_auto_race">در این حالت، «هوشمند» دو مسیر را هم‌زمان امتحان می‌کند و به‌خاطر می‌سپارد روی این شبکه کدام‌یک کار کرد تا اتصال بعدی سریع باشد.</string>
-    <string name="protocol_auto_ladder">روی این بک‌اند، «هوشمند» مسیرها را یکی‌یکی امتحان می‌کند. مسابقهٔ موازی به بک‌اند سادهٔ اتر و انتخاب خودکار اندپوینت نیاز دارد.</string>
+    <string name="protocol_auto_ladder">روی این بک‌اند، «هوشمند» مسیرها را یکی‌یکی امتحان می‌کند. مسابقهٔ موازی به بک‌اند سادهٔ tvaVPN و انتخاب خودکار اندپوینت نیاز دارد.</string>
     <!-- 1.4.0-r5: VPN sharing rewrite -->
     <string name="share_status_live">اشتراک فعال · ⁨%1$d⁩ اتصال</string>
     <string name="share_off_hint">اشتراک‌گذاری را روشن کنید و حالت را انتخاب کنید؛ آدرس‌هایی که باید در دستگاه دیگر وارد شوند اینجا نمایش داده می‌شوند.</string>
@@ -499,7 +489,7 @@
     <string name="share_ip_label">آدرس ⁨IP⁩ گوشی</string>
     <string name="share_pac_label">نشانی پراکسی خودکار (⁨PAC⁩) — ساده‌ترین و ایمن‌ترین</string>
     <string name="share_copy_all">کپی همهٔ مشخصات</string>
-    <string name="share_copy_all_label">مشخصات اشتراک اتر</string>
+    <string name="share_copy_all_label">مشخصات اشتراک tvaVPN</string>
     <string name="share_copied_all">همهٔ مشخصات کپی شد</string>
     <string name="share_steps_title">روش اتصال</string>
     <string name="share_step_home_1">مطمئن شوید دستگاه دیگر به همان وای‌فای گوشی وصل است.</string>
@@ -620,7 +610,7 @@
 
     <!-- 1.5.0: custom configs -->
     <string name="cc_title">کانفیگ‌های سفارشی</string>
-    <string name="cc_nav_desc">کانفیگ‌های ⁨V2Ray/Xray⁩ و ⁨NapsternetV⁩ خودتان، تنها یا زنجیره‌شده با ⁨Aether⁩، ⁨Psiphon⁩ و ⁨Tor⁩</string>
+    <string name="cc_nav_desc">کانفیگ‌های ⁨V2Ray/Xray⁩ و ⁨NapsternetV⁩ خودتان، تنها یا زنجیره‌شده با ⁨tvaVPN⁩، ⁨Psiphon⁩ و ⁨Tor⁩</string>
     <string name="cc_off">خاموش</string>
     <string name="cc_enable">استفاده از کانفیگ سفارشی</string>
     <string name="cc_enable_desc">روشن: اتصال بعدی «%1$s» را در زنجیرهٔ زیر اجرا می‌کند</string>
@@ -682,7 +672,7 @@
     <string name="cc_ping_noreply">پاسخ نمی‌دهد</string>
     <string name="cc_ping_invalid">کانفیگ نامعتبر</string>
     <string name="cc_ping_nonet">بدون اینترنت</string>
-    <string name="cc_ping_footer">پینگ، تست تأخیر واقعی است، مانند ⁨v2rayNG⁩: هر کانفیگ دقیقاً مثل اتصال مستقیم در هستهٔ ⁨Xray⁩ اجرا می‌شود و یک درخواست (⁨generate_204⁩) از داخل آن فرستاده می‌شود. عدد نمایش‌داده‌شده زمان همین درخواست، همراه دست‌دهی است. کانفیگی که چیزی عبور ندهد ⁨-1⁩ می‌گیرد و علت آن نوشته می‌شود: «غیرفعال / سرور خاموش» یعنی نام سرور پیدا نمی‌شود یا پورت آن بسته است؛ «فیلترشده» یعنی شبکه اتصال به سرور را می‌اندازد یا ریست می‌کند (زنجیره کردن پشت ⁨Aether⁩ یا ⁨Tor⁩ می‌تواند کمک کند)؛ «پاسخ نمی‌دهد» یعنی سرور اتصال را می‌پذیرد ولی کانفیگ چیزی عبور نمی‌دهد (منقضی، کلید یا کاربر نادرست، یا پروتکل آن مسدود است)؛ «کانفیگ نامعتبر» یعنی هستهٔ ⁨Xray⁩ کانفیگ را نمی‌پذیرد.</string>
+    <string name="cc_ping_footer">پینگ، تست تأخیر واقعی است، مانند ⁨v2rayNG⁩: هر کانفیگ دقیقاً مثل اتصال مستقیم در هستهٔ ⁨Xray⁩ اجرا می‌شود و یک درخواست (⁨generate_204⁩) از داخل آن فرستاده می‌شود. عدد نمایش‌داده‌شده زمان همین درخواست، همراه دست‌دهی است. کانفیگی که چیزی عبور ندهد ⁨-1⁩ می‌گیرد و علت آن نوشته می‌شود: «غیرفعال / سرور خاموش» یعنی نام سرور پیدا نمی‌شود یا پورت آن بسته است؛ «فیلترشده» یعنی شبکه اتصال به سرور را می‌اندازد یا ریست می‌کند (زنجیره کردن پشت ⁨tvaVPN⁩ یا ⁨Tor⁩ می‌تواند کمک کند)؛ «پاسخ نمی‌دهد» یعنی سرور اتصال را می‌پذیرد ولی کانفیگ چیزی عبور نمی‌دهد (منقضی، کلید یا کاربر نادرست، یا پروتکل آن مسدود است)؛ «کانفیگ نامعتبر» یعنی هستهٔ ⁨Xray⁩ کانفیگ را نمی‌پذیرد.</string>
     <string name="cc_err_psiphon_direct">سایفون از اینجا به شبکهٔ خودش نرسید، پس چیزی برای تحویل به کانفیگ ندارد. در این شبکه جهت معکوس (⁨Config → Psiphon⁩) را استفاده کنید؛ آنجا سایفون از طریق کانفیگ شما شماره‌گیری می‌کند.</string>
     <string name="cc_err_expired">مهلت این کانفیگ سفارشی تمام شده است (سازنده‌اش تاریخ انقضا گذاشته).</string>
     <string name="cc_err_mobile_only">این کانفیگ سفارشی فقط روی اینترنت همراه قابل استفاده است.</string>
@@ -703,9 +693,16 @@
     <string name="backup_exported">تنظیمات ذخیره شد</string>
     <string name="backup_export_failed">ذخیرهٔ فایل ناموفق بود</string>
     <string name="backup_imported">تنظیمات وارد شد</string>
-    <string name="backup_err_invalid">این فایل، فایل تنظیمات معتبر Aether نیست</string>
-    <string name="backup_err_newer">این فایل با نسخهٔ جدیدتری از Aether ساخته شده است</string>
+    <string name="backup_err_invalid">این فایل، فایل تنظیمات معتبر tvaVPN نیست</string>
+    <string name="backup_err_newer">این فایل با نسخهٔ جدیدتری از tvaVPN ساخته شده است</string>
     <string name="backup_confirm_title">این تنظیمات وارد شود؟</string>
     <string name="backup_confirm_body">تنظیمات فعلی شما جایگزین می‌شود. ورود Zero Trust و پروکسی بالادستی این گوشی حفظ می‌شود. فقط فایل کسانی را وارد کنید که به آن‌ها اعتماد دارید: یک فایل تنظیمات می‌تواند سرورهای DNS، نقطه‌های اتصال و مسیرها را عوض کند.</string>
     <string name="backup_confirm_ok">وارد کردن</string>
+
+    <!-- Tamper block: shown when the APK signature is not the official one -->
+    <string name="tamper_title">نسخهٔ غیررسمی یا دستکاری‌شده</string>
+    <string name="tamper_body">این نسخه از ⁨tvaVPN⁩ با کلید رسمی امضا نشده و ممکن است دستکاری یا دوباره بسته‌بندی شده باشد. برنامهٔ ⁨VPN⁩ همهٔ ترافیک شما را می‌بیند، برای همین متوقف شد. لطفاً آن را حذف کنید و برنامه را فقط از صفحهٔ رسمی انتشار در گیت‌هاب نصب کنید.</string>
+    <string name="tamper_open_official">باز کردن صفحهٔ رسمی گیت‌هاب</string>
+    <string name="tamper_exit">خروج</string>
+    <string name="tamper_short">نسخهٔ غیررسمی: اتصال مسدود شد</string>
 </resources>

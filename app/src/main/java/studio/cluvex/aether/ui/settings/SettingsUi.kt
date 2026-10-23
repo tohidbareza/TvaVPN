@@ -799,7 +799,6 @@ fun SettingsNoticeRow(text: String, icon: ImageVector? = null) = BaseRow(
 @Composable
 fun SettingsHero(
     title: String,
-    subtitle: String,
     icon: ImageVector,
     chips: List<String>,
     accent: Color = MaterialTheme.colorScheme.primary,
@@ -839,12 +838,6 @@ fun SettingsHero(
                     style = MaterialTheme.typography.titleLarge,
                     fontWeight = FontWeight.SemiBold,
                     color = OnDark,
-                )
-                Spacer(Modifier.height(2.dp))
-                Text(
-                    text = subtitle,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = OnDarkMuted,
                 )
             }
         }
